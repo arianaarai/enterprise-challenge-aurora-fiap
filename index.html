@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A Aurora transforma dados de performance, cultura e engajamento em insights para líderes. Agende uma demonstração gratuita.">
+  <title>Aurora — Decisões sobre pessoas guiadas por dados</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#inicio" aria-label="Aurora — início">Aurora<span>.</span></a>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu">
+        ☰
+      </button>
+      <nav id="nav-menu" aria-label="Principal">
+        <ul class="nav-menu">
+          <li><a href="#solucao">Solução</a></li>
+          <li><a href="#funcionalidades">Funcionalidades</a></li>
+          <li><a href="#planos">Planos</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a class="btn btn-primary" href="#contato">Agendar demo</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="inicio">
+      <div class="container">
+        <div class="hero-tabs" role="tablist" aria-label="Persona">
+          <button type="button" role="tab" data-persona="rh" aria-selected="true">Para RH</button>
+          <button type="button" role="tab" data-persona="ceo" aria-selected="false" tabindex="-1">Para CEO</button>
+          <button type="button" role="tab" data-persona="gestor" aria-selected="false" tabindex="-1">Para Gestores</button>
+        </div>
+        <h1 id="hero-headline">Decisões sobre pessoas guiadas por dados. Insights que geram resultados.</h1>
+        <p class="hero-sub" id="hero-subheadline">A Aurora cruza dados de performance, cultura e engajamento para gerar insights que ajudam a liderança da sua empresa a decidir melhor.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contato">Agendar demonstração</a>
+          <a class="btn btn-secondary" href="#solucao">Conhecer a solução</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-soft" id="solucao">
+      <div class="container">
+        <h2>Sua empresa ainda decide sobre pessoas no escuro?</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Dados espalhados</h3>
+            <p>Planilhas, pesquisas soltas e sistemas desconectados — sem visão única para a diretoria.</p>
+          </article>
+          <article class="card">
+            <h3>Líderes sem direcionamento</h3>
+            <p>Feedbacks baseados em percepção, não em dados. Dificuldade em transformar conversas em planos de ação.</p>
+          </article>
+          <article class="card">
+            <h3>Impacto financeiro invisível</h3>
+            <p>Desligamentos sem visão do custo real. Decisões morosas que afetam pessoas e resultado.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>E se sua empresa pudesse decidir com clareza?</h2>
+        <p>A Aurora transforma dados de pessoas em decisões conscientes — com visão consolidada, insights acionáveis e impacto financeiro visível.</p>
+      </div>
+    </section>
+
+    <section class="section-soft" id="funcionalidades">
+      <div class="container">
+        <h2>Tudo que a liderança precisa em um só lugar</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Dashboard consolidado</h3>
+            <p>Visão geral de um ciclo de performance da sua empresa em um único painel.</p>
+          </article>
+          <article class="card">
+            <h3>Análise de performance</h3>
+            <p>Metas quantitativas e qualitativas acompanhadas em tempo real.</p>
+          </article>
+          <article class="card">
+            <h3>Insights de engajamento</h3>
+            <p>Pesquisas de clima transformadas em ações concretas para líderes.</p>
+          </article>
+          <article class="card">
+            <h3>Impacto de turnover</h3>
+            <p>Calculadora de impacto financeiro de desligamentos com projeções de custo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="roi">
+      <div class="container">
+        <h2>O custo de decidir no escuro</h2>
+        <div class="card calc-box">
+          <div class="form-group">
+            <label for="calc-colaboradores">Nº de colaboradores</label>
+            <input type="number" id="calc-colaboradores" min="1" placeholder="Ex: 100">
+          </div>
+          <div class="form-group">
+            <label for="calc-salario">Salário médio mensal (R$)</label>
+            <input type="number" id="calc-salario" min="0" step="100" placeholder="Ex: 5000">
+          </div>
+          <div class="form-group">
+            <label for="calc-turnover">Taxa de turnover anual (%)</label>
+            <input type="number" id="calc-turnover" min="0" max="100" step="0.1" placeholder="Ex: 15">
+          </div>
+          <button type="button" class="btn btn-primary" id="calc-btn">Calcular custo estimado</button>
+          <p class="calc-result" id="calc-resultado" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-soft">
+      <div class="container">
+        <h2>O que as pessoas estão falando</h2>
+        <div class="card-grid">
+          <blockquote class="card testimonial">
+            <p>"Eu já presenciei o quanto uma decisão de desligamento errada impacta na vida das pessoas e das empresas."</p>
+            <cite>— Nayara Melo, CEO, Aurora</cite>
+          </blockquote>
+          <blockquote class="card testimonial">
+            <p>"Ter uma solução que conscientiza a liderança sobre impacto financeiro e turnover faria muita diferença."</p>
+            <cite>— Barbara, HRBP</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="planos">
+      <div class="container">
+        <h2>Planos para o tamanho da sua empresa</h2>
+        <div class="card-grid">
+          <article class="card plan-card">
+            <h3>Rosa</h3>
+            <p>Visão geral, funil de contratação, mapa de colaboradores, highlights e lowlights.</p>
+            <p><strong>&lt;50:</strong> R$20/colab · <strong>50–350:</strong> R$15 · <strong>350+:</strong> R$10</p>
+          </article>
+          <article class="card plan-card featured">
+            <span class="plan-badge">Recomendado</span>
+            <h3>Violeta</h3>
+            <p>Tudo do Rosa + Inteligência Artificial (Boreal) + Plano de Ação Individual.</p>
+            <p><strong>&lt;50:</strong> R$25/colab · <strong>50–350:</strong> R$20 · <strong>350+:</strong> R$15</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-soft" id="contato">
+      <div class="container">
+        <h2>Protagonize o fenômeno na sua empresa</h2>
+        <p>Agende uma demonstração gratuita da Aurora.</p>
+        <form id="lead-form" class="card" novalidate style="max-width: 520px; margin-top: 24px;">
+          <div class="form-group">
+            <label for="nome">Nome completo *</label>
+            <input type="text" id="nome" name="nome" required autocomplete="name">
+          </div>
+          <div class="form-group">
+            <label for="cargo">Cargo *</label>
+            <select id="cargo" name="cargo" required>
+              <option value="">Selecione</option>
+              <option value="analista">Analista</option>
+              <option value="gerente">Gerente</option>
+              <option value="coordenador">Coordenador</option>
+              <option value="diretor">Diretor</option>
+              <option value="chro">CHRO / Head de RH</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="area">Área *</label>
+            <select id="area" name="area" required>
+              <option value="">Selecione</option>
+              <option value="rh">Recursos Humanos</option>
+              <option value="financas">Finanças</option>
+              <option value="ti">Tecnologia</option>
+              <option value="comercial">Comercial</option>
+              <option value="operacoes">Operações</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail profissional *</label>
+            <input type="email" id="email" name="email" required autocomplete="email">
+          </div>
+          <div class="form-group">
+            <label for="telefone">Telefone (opcional)</label>
+            <input type="tel" id="telefone" name="telefone" autocomplete="tel">
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="lgpd" name="lgpd" required>
+            <label for="lgpd">Li e aceito a Política de Privacidade (LGPD) *</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Agendar demonstração</button>
+        </form>
+        <div id="form-success" class="form-success" hidden role="status">
+          <p><strong>Obrigado!</strong> Recebemos seus dados. Nossa equipe entrará em contato em até 48 horas para agendar sua demonstração.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <h2>Perguntas frequentes</h2>
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-1">A Aurora é segura? Como tratam os dados?</button>
+          <div class="faq-answer" id="faq-1" hidden>
+            <p>Sim. Seguimos política interna de segurança, LGPD e criptografia.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-2">Quanto tempo leva para implementar?</button>
+          <div class="faq-answer" id="faq-2" hidden>
+            <p>A definir após a 1ª implantação (previsão jun/2026).</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-3">Integra com nosso RH atual?</button>
+          <div class="faq-answer" id="faq-3" hidden>
+            <p>Sim. Integrações são analisadas e discutidas previamente com sua empresa.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false" aria-controls="faq-4">Preciso de equipe técnica?</button>
+          <div class="faq-answer" id="faq-4" hidden>
+            <p>Não. A Aurora foi desenhada para RH e líderes, sem conhecimento técnico aprofundado.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="logo" style="color: #fff;">Aurora<span>.</span></p>
+      <p>Protagonize o fenômeno</p>
+      <ul class="footer-links">
+        <li><a href="#solucao">Solução</a></li>
+        <li><a href="#planos">Planos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <p>© 2026 Aurora · People Analytics</p>
+    </div>
+  </footer>
+
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Consentimento de cookies">
+    <p>Este site usa cookies para melhorar sua experiência.</p>
+    <button type="button" class="btn btn-primary" id="cookie-accept">Aceitar</button>
+    <button type="button" class="btn btn-secondary" id="cookie-decline">Recusar</button>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

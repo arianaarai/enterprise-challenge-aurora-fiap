@@ -1,0 +1,15 @@
+:root {
+  --color-primary: #6a509d;
+  --color-primary-light: #7e61a7;
+  --color-accent-pink: #cf4793;
+  --color-accent-teal: #31b4a6;
+  --color-dark: #1a1a2e;
+  --color-text: #4a4a68;
+  --color-bg: #ffffff;
+  --color-bg-soft: #f8f7fc;
+  --color-border: #e0dce8;
+  --font-family: 'Outfit', system-ui, sans-serif;
+  --radius: 12px;
+  --shadow: 0 4px 24px rgba(106, 80, 157, 0.12);
+  --header-height: 72px;
+}
