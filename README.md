@@ -7,6 +7,15 @@ Landing page B2B da [Aurora](https://aurorapro.com.br) — HR Tech / People Anal
 - **Repositório:** https://github.com/arianaarai/enterprise-challenge-aurora-fiap
 - **Demo online:** _(adicionar URL Vercel após deploy)_
 
+## Estrutura deste repo (Integrante 3)
+
+```
+js/main.js    ← interatividade
+README.md     ← documentação + contratos para o grupo
+```
+
+HTML (`index.html`) e CSS (`css/`) serão adicionados pelos Integrantes 1 e 2.
+
 ## JavaScript — `js/main.js`
 
 Interatividade da landing page (Ariana Cristina Arai Jesus · RM 570051):
@@ -34,7 +43,11 @@ Tabs do hero exigem um bloco `.hero-panel[data-persona]` por persona (textos no 
 
 Cada tab precisa de `data-persona` igual ao painel correspondente.
 
+Lista completa de IDs/classes que o HTML deve manter: ver bullets acima (calc, form, nav, faq, cookies).
+
 ### Rodar localmente
+
+Requer `index.html` e `css/` na mesma pasta (Integrantes 1 e 2). Depois:
 
 ```bash
 python3 -m http.server 8080
@@ -42,9 +55,9 @@ python3 -m http.server 8080
 
 Acesse http://localhost:8080
 
-Teste o menu mobile com a janela ≤ 768px de largura.
-
 ## Deploy (Vercel)
+
+Após HTML e CSS estarem no repo:
 
 1. Importar o repo no [Vercel](https://vercel.com)
 2. Framework: **Other**
