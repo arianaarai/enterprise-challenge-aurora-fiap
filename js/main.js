@@ -1,44 +1,17 @@
-/**
- * Aurora Landing Page — Integrante 3
- * Tabs hero, calculadora ROI, FAQ, formulário, menu mobile, scroll suave
- */
-
-const PERSONA_COPY = {
-  rh: {
-    headline:
-      'Decisões sobre pessoas guiadas por dados. Insights que geram resultados.',
-    subheadline:
-      'A Aurora cruza dados de performance, cultura e engajamento para gerar insights que ajudam a liderança da sua empresa a decidir melhor.',
-  },
-  ceo: {
-    headline:
-      'Reduza o custo do turnover com decisões baseadas em dados — não em intuição.',
-    subheadline:
-      'Visibilidade financeira de desligamentos e retenção para sua empresa tomar decisões estratégicas com segurança.',
-  },
-  gestor: {
-    headline:
-      'Saiba quem performa, quem precisa de apoio e como desenvolver seu time.',
-    subheadline:
-      'Direcionamento individualizado para líderes com dados de performance e engajamento em um só lugar.',
-  },
-};
-
 const TURNOVER_MULTIPLIER = 1.5;
 
 function initHeroTabs() {
   const tablist = document.querySelector('.hero-tabs');
-  const headlineEl = document.getElementById('hero-headline');
-  const subheadlineEl = document.getElementById('hero-subheadline');
-
-  if (!tablist || !headlineEl) return;
+  if (!tablist) return;
 
   const tabs = tablist.querySelectorAll('[role="tab"]');
+  const panels = document.querySelectorAll('.hero-panel[data-persona]');
+
+  if (!tabs.length || !panels.length) return;
 
   function activateTab(tab) {
     const persona = tab.dataset.persona;
-    const copy = PERSONA_COPY[persona];
-    if (!copy) return;
+    if (!persona) return;
 
     tabs.forEach((t) => {
       const selected = t === tab;
@@ -46,8 +19,11 @@ function initHeroTabs() {
       t.tabIndex = selected ? 0 : -1;
     });
 
-    headlineEl.textContent = copy.headline;
-    if (subheadlineEl) subheadlineEl.textContent = copy.subheadline;
+    panels.forEach((panel) => {
+      const show = panel.dataset.persona === persona;
+      panel.hidden = !show;
+      panel.setAttribute('aria-hidden', String(!show));
+    });
   }
 
   tabs.forEach((tab) => {

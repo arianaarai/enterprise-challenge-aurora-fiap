@@ -11,13 +11,28 @@ Landing page B2B da [Aurora](https://aurorapro.com.br) — HR Tech / People Anal
 
 Interatividade da landing page (Ariana Cristina Arai Jesus · RM 570051):
 
-- Tabs hero (RH / CEO / Gestor) — altera `#hero-headline` e `#hero-subheadline`
+- Tabs hero (RH / CEO / Gestor) — alterna `.hero-panel[data-persona]` (textos no HTML)
 - Calculadora de turnover — `#calc-colaboradores`, `#calc-salario`, `#calc-turnover`, `#calc-btn`, `#calc-resultado`
 - FAQ accordion — `.faq-question` / `.faq-answer`
 - Validação do formulário de lead — `#lead-form`, `#form-success`
 - Menu mobile (hambúrguer) — `#nav-toggle`, `#nav-menu`, `.nav-menu`
 - Scroll suave em links âncora
 - Banner de cookies — `#cookie-banner`, `#cookie-accept`, `#cookie-decline`
+
+### Contrato HTML (Integrante 1 — Gabriela)
+
+Tabs do hero exigem um bloco `.hero-panel[data-persona]` por persona (textos no HTML, não no JS). Exemplo:
+
+```html
+<div class="hero-tabs" role="tablist">...</div>
+<div class="hero-panels">
+  <div class="hero-panel" data-persona="rh" role="tabpanel">...</div>
+  <div class="hero-panel" data-persona="ceo" role="tabpanel" hidden>...</div>
+  <div class="hero-panel" data-persona="gestor" role="tabpanel" hidden>...</div>
+</div>
+```
+
+Cada tab precisa de `data-persona` igual ao painel correspondente.
 
 ### Rodar localmente
 
