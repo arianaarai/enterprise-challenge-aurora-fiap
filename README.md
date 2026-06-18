@@ -7,18 +7,19 @@ Landing page B2B da [Aurora](https://aurorapro.com.br) — HR Tech / People Anal
 - **Repositório:** https://github.com/arianaarai/enterprise-challenge-aurora-fiap
 - **Demo online:** _(adicionar URL Vercel após deploy)_
 
-## Estrutura
+## JavaScript — `js/main.js`
 
-```
-├── index.html       ← Integrante 1 (HTML)
-├── css/             ← Integrante 2 (visual)
-├── js/main.js       ← Integrante 3 (interatividade)
-└── assets/          ← logo, ícones
-```
+Interatividade da landing page (Ariana Cristina Arai Jesus · RM 570051):
 
-## Rodar localmente
+- Tabs hero (RH / CEO / Gestor) — altera `#hero-headline` e `#hero-subheadline`
+- Calculadora de turnover — `#calc-colaboradores`, `#calc-salario`, `#calc-turnover`, `#calc-btn`, `#calc-resultado`
+- FAQ accordion — `.faq-question` / `.faq-answer`
+- Validação do formulário de lead — `#lead-form`, `#form-success`
+- Menu mobile (hambúrguer) — `#nav-toggle`, `#nav-menu`, `.nav-menu`
+- Scroll suave em links âncora
+- Banner de cookies — `#cookie-banner`, `#cookie-accept`, `#cookie-decline`
 
-Abra `index.html` no navegador ou use um servidor local:
+### Rodar localmente
 
 ```bash
 python3 -m http.server 8080
@@ -26,26 +27,20 @@ python3 -m http.server 8080
 
 Acesse http://localhost:8080
 
-## JavaScript (`js/main.js`)
-
-- Tabs hero (RH / CEO / Gestor)
-- Calculadora de turnover
-- FAQ accordion
-- Validação do formulário de lead
-- Menu mobile + scroll suave
-- Banner de cookies
+Teste o menu mobile com a janela ≤ 768px de largura.
 
 ## Deploy (Vercel)
 
-1. Importar repo no [Vercel](https://vercel.com)
+1. Importar o repo no [Vercel](https://vercel.com)
 2. Framework: **Other**
 3. Root: `/`
+4. Após o deploy, atualizar a URL em **Demo online** acima
 
 ## Equipe
 
-| Integrante | Responsabilidade |
-|------------|------------------|
-| 1 | HTML + estrutura |
-| 2 | CSS + responsivo |
-| 3 | JS + deploy |
-| 4 | Conteúdo + PDF FIAP + vídeo |
+| Nome | RM |
+|------|-----|
+| Ariana Cristina Arai Jesus | 570051 |
+| Gabriela di Sousa Rodrigues | 570213 |
+| Hugo D'Angelo | 571523 |
+| Larissa Sayuri Ribeiro Oyama | 573300 |

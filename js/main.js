@@ -214,19 +214,22 @@ function initFormValidation() {
 
 function initMobileNav() {
   const toggle = document.getElementById('nav-toggle');
-  const menu = document.getElementById('nav-menu');
+  const nav = document.getElementById('nav-menu');
+  const menuList = nav?.querySelector('.nav-menu');
 
-  if (!toggle || !menu) return;
+  if (!toggle || !menuList) return;
 
   toggle.addEventListener('click', () => {
-    const open = menu.classList.toggle('is-open');
+    const open = menuList.classList.toggle('is-open');
     toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
   });
 
-  menu.querySelectorAll('a[href^="#"]').forEach((link) => {
+  menuList.querySelectorAll('a[href^="#"]').forEach((link) => {
     link.addEventListener('click', () => {
-      menu.classList.remove('is-open');
+      menuList.classList.remove('is-open');
       toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', 'Abrir menu');
     });
   });
 }
@@ -255,17 +258,20 @@ function initCookieBanner() {
 
   if (localStorage.getItem('aurora-cookies') === 'accepted') {
     banner.hidden = true;
+    banner.setAttribute('aria-hidden', 'true');
     return;
   }
 
   acceptBtn.addEventListener('click', () => {
     localStorage.setItem('aurora-cookies', 'accepted');
     banner.hidden = true;
+    banner.setAttribute('aria-hidden', 'true');
   });
 
   if (declineBtn) {
     declineBtn.addEventListener('click', () => {
       banner.hidden = true;
+      banner.setAttribute('aria-hidden', 'true');
     });
   }
 }
