@@ -1,0 +1,446 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Aurora - People Analytics</title>
+
+  <!-- Fonte Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Aurora</div>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav id="nav-menu" class="navbar">
+      <ul class="nav-menu">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#dores">Dores</a></li>
+        <li><a href="#funcionalidades">Funcionalidades</a></li>
+        <li><a href="#roi">ROI</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="inicio" class="hero">
+      <div class="hero-content">
+        <span class="tag">People Analytics para empresas</span>
+
+        <h1>Decisões sobre pessoas guiadas por dados. Insights que geram resultados.</h1>
+
+        <p>
+          A Aurora cruza dados de performance, cultura e engajamento para gerar insights
+          que ajudam líderes a decidir melhor, com foco em resultado e impacto.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contato" class="btn btn-primary">Agendar Demonstração</a>
+          <a href="#funcionalidades" class="btn btn-secondary">Saiba Mais</a>
+        </div>
+      </div>
+
+      <!-- Tabs do Hero -->
+      <div class="hero-tabs" role="tablist" aria-label="Perfis de usuários">
+        <div class="tabs-buttons">
+          <button
+            class="tab-btn"
+            role="tab"
+            data-persona="rh"
+            aria-selected="true"
+            tabindex="0">
+            RH
+          </button>
+
+          <button
+            class="tab-btn"
+            role="tab"
+            data-persona="ceo"
+            aria-selected="false"
+            tabindex="-1">
+            CEO
+          </button>
+
+          <button
+            class="tab-btn"
+            role="tab"
+            data-persona="gestor"
+            aria-selected="false"
+            tabindex="-1">
+            Gestor
+          </button>
+        </div>
+
+        <div class="hero-panel" data-persona="rh" aria-hidden="false">
+          <h3>Para líderes de RH</h3>
+          <p>
+            Consolide dados de pessoas em um único lugar e transforme informações espalhadas
+            em decisões estratégicas para apresentar à diretoria.
+          </p>
+        </div>
+
+        <div class="hero-panel" data-persona="ceo" aria-hidden="true" hidden>
+          <h3>Para CEOs e fundadores</h3>
+          <p>
+            Entenda o impacto financeiro do turnover, acompanhe indicadores de pessoas
+            e tome decisões mais rápidas para proteger a performance do negócio.
+          </p>
+        </div>
+
+        <div class="hero-panel" data-persona="gestor" aria-hidden="true" hidden>
+          <h3>Para gestores de equipe</h3>
+          <p>
+            Tenha clareza sobre quem precisa de apoio, quem está pronto para crescer
+            e quais ações ajudam o time a evoluir.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dores -->
+    <section id="dores" class="section">
+      <div class="section-title">
+        <span class="tag">Dores do cliente</span>
+        <h2>O RH da sua empresa ainda decide no escuro?</h2>
+        <p>
+          Muitas empresas ainda tomam decisões importantes sobre pessoas com dados espalhados,
+          processos manuais e pouca visibilidade de impacto.
+        </p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card">
+          <h3>Dados espalhados</h3>
+          <p>
+            Informações de performance, clima e engajamento ficam perdidas em planilhas
+            e ferramentas diferentes.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Falta de direcionamento</h3>
+          <p>
+            Líderes têm dificuldade para saber quem precisa de suporte e quais ações devem
+            ser tomadas.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Turnover invisível</h3>
+          <p>
+            Desligamentos geram custos altos, mas muitas empresas não enxergam esse impacto
+            antes que ele aconteça.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Solução -->
+    <section id="solucao" class="section section-highlight">
+      <div class="section-title">
+        <span class="tag">Como a Aurora resolve</span>
+        <h2>E se sua empresa pudesse transformar dados de pessoas em ação?</h2>
+        <p>
+          A Aurora organiza informações importantes em uma plataforma simples, visual
+          e estratégica para RHs, líderes e diretoria.
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step">
+          <span>1</span>
+          <h3>Conecte seus dados</h3>
+          <p>Reúna informações de performance, cultura, clima e engajamento.</p>
+        </div>
+
+        <div class="step">
+          <span>2</span>
+          <h3>Receba insights</h3>
+          <p>Visualize alertas, padrões e recomendações geradas a partir dos dados.</p>
+        </div>
+
+        <div class="step">
+          <span>3</span>
+          <h3>Decida com confiança</h3>
+          <p>Transforme informações em ações para melhorar pessoas e resultados.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Funcionalidades - Parte Pessoa 2 -->
+    <section id="funcionalidades" class="section">
+      <div class="section-title">
+        <span class="tag">Funcionalidades</span>
+        <h2>Recursos que ajudam sua empresa a decidir melhor</h2>
+        <p>
+          A Aurora combina dados, inteligência e visualização para apoiar decisões
+          estratégicas sobre pessoas.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <article class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Dashboard Consolidado</h3>
+          <p>
+            Visualize em um só lugar os principais indicadores de pessoas, performance,
+            cultura e engajamento da organização.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3>Análise de Performance</h3>
+          <p>
+            Acompanhe metas quantitativas e qualitativas em tempo real para entender
+            a evolução dos times e colaboradores.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">💬</div>
+          <h3>Insights de Engajamento</h3>
+          <p>
+            Transforme pesquisas de clima e engajamento em ações práticas para líderes,
+            mantendo a confidencialidade das respostas.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">💸</div>
+          <h3>Impacto de Turnover</h3>
+          <p>
+            Calcule o impacto financeiro dos desligamentos e antecipe riscos que podem
+            afetar os resultados da empresa.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">🧭</div>
+          <h3>Recomendações para Líderes</h3>
+          <p>
+            Receba direcionamentos personalizados para desenvolver colaboradores,
+            apoiar equipes e melhorar a tomada de decisão.
+          </p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon">🤖</div>
+          <h3>IA Boreal</h3>
+          <p>
+            Uma inteligência artificial que identifica padrões, antecipa riscos de turnover
+            e orienta os próximos passos da liderança.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Calculadora de ROI / Turnover -->
+    <section id="roi" class="section section-highlight">
+      <div class="section-title">
+        <span class="tag">ROI</span>
+        <h2>Calcule o impacto estimado do turnover</h2>
+        <p>
+          Use a calculadora para entender como a saída de colaboradores pode impactar
+          financeiramente sua empresa.
+        </p>
+      </div>
+
+      <div class="calculator-box">
+        <div class="form-group">
+          <label for="calc-colaboradores">Número de colaboradores</label>
+          <input type="number" id="calc-colaboradores" placeholder="Ex: 100" min="1">
+        </div>
+
+        <div class="form-group">
+          <label for="calc-salario">Salário médio mensal</label>
+          <input type="number" id="calc-salario" placeholder="Ex: 3000" min="1">
+        </div>
+
+        <div class="form-group">
+          <label for="calc-turnover">Taxa de turnover (%)</label>
+          <input type="number" id="calc-turnover" placeholder="Ex: 15" min="0" max="100">
+        </div>
+
+        <button type="button" class="btn btn-primary calc-btn" id="calc-btn">
+          Calcular impacto
+        </button>
+
+        <div id="calc-resultado" class="calc-resultado" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- Formulário -->
+    <section id="contato" class="section">
+      <div class="section-title">
+        <span class="tag">Contato</span>
+        <h2>Agende uma demonstração</h2>
+        <p>
+          Preencha o formulário e o time da Aurora entrará em contato para apresentar
+          a solução.
+        </p>
+      </div>
+
+      <form id="lead-form" class="lead-form">
+        <div class="form-group">
+          <label for="nome">Nome completo *</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+
+        <div class="form-group">
+          <label for="cargo">Cargo *</label>
+          <select id="cargo" name="cargo" required>
+            <option value="">Selecione seu cargo</option>
+            <option value="analista">Analista</option>
+            <option value="assistente">Assistente</option>
+            <option value="consultor">Consultor</option>
+            <option value="coordenador">Coordenador</option>
+            <option value="diretor">Diretor</option>
+            <option value="estagiario">Estagiário</option>
+            <option value="gerente">Gerente</option>
+            <option value="supervisor">Supervisor</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="area">Área *</label>
+          <select id="area" name="area" required>
+            <option value="">Selecione sua área</option>
+            <option value="comercial">Comercial e Vendas</option>
+            <option value="marketing">Comunicação e Marketing</option>
+            <option value="direcao">Direção e C-level</option>
+            <option value="financas">Finanças e Controladoria</option>
+            <option value="juridico">Jurídico e Governança</option>
+            <option value="rh">Recursos Humanos</option>
+            <option value="ti">Tecnologia da Informação</option>
+            <option value="operacoes">Operações e Logística</option>
+            <option value="outros">Outros</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail profissional *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="telefone">Telefone</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="lgpd" name="lgpd" required>
+          <label for="lgpd">
+            Concordo com o uso dos meus dados conforme a Política de Privacidade.
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+          Enviar solicitação
+        </button>
+      </form>
+
+      <div id="form-success" class="form-success" hidden>
+        Solicitação enviada com sucesso! Em breve entraremos em contato.
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section section-highlight">
+      <div class="section-title">
+        <span class="tag">FAQ</span>
+        <h2>Perguntas frequentes</h2>
+      </div>
+
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-1">
+            A Aurora é segura? Como tratam os dados dos colaboradores?
+          </button>
+          <div class="faq-answer" id="faq-1" hidden>
+            Sim. A Aurora considera boas práticas de segurança, privacidade e tratamento
+            de dados alinhadas à LGPD.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-2">
+            Quanto tempo leva para implementar?
+          </button>
+          <div class="faq-answer" id="faq-2" hidden>
+            O tempo de implementação pode variar de acordo com o tamanho da empresa,
+            quantidade de dados e integrações necessárias.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-3">
+            A Aurora integra com sistemas de RH?
+          </button>
+          <div class="faq-answer" id="faq-3" hidden>
+            As integrações podem ser analisadas conforme as ferramentas já utilizadas
+            pela empresa.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-4">
+            Preciso de uma equipe técnica para usar?
+          </button>
+          <div class="faq-answer" id="faq-4" hidden>
+            Não. A Aurora foi pensada para profissionais de RH e líderes, com uma
+            experiência simples e acessível.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Cookie Banner -->
+  <div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-text">
+      <strong>Cookies</strong>
+      <p>
+        Utilizamos cookies para melhorar sua experiência. Ao continuar navegando,
+        você concorda com nossa política de cookies.
+      </p>
+    </div>
+
+    <div class="cookie-buttons">
+      <button id="cookie-accept" class="btn btn-primary" type="button">Aceitar</button>
+      <button id="cookie-decline" class="btn btn-secondary" type="button">Recusar</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <strong>Aurora</strong>
+      <p>People Analytics para decisões mais humanas, estratégicas e orientadas por dados.</p>
+      <p>&copy; 2026 Aurora People Analytics. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript da Ariana -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
+```
+
+<script src="js/main.js" defer></script>
