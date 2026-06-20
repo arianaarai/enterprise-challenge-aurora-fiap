@@ -7,7 +7,7 @@ Landing page B2B de conversão para a [Aurora](https://aurorapro.com.br) — pla
 ## Links
 
 - **Repositório:** https://github.com/arianaarai/enterprise-challenge-aurora-fiap
-- **Demo online:** _(adicionar URL Vercel após deploy)_
+- **Demo online:** https://enterprise-challenge-aurora-fiap.vercel.app
 
 ## Sobre o projeto
 
